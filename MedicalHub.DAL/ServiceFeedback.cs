@@ -8,8 +8,9 @@ namespace MedicalHub.DAL
 {
     class ServiceFeedback
     {
-        public Guid Id { get; set; }
-        public Contact ContactId { get; set; }
+        public int Id { get; set; }
+        public Contact Contact { get; set; }
+        public int ContactId { get; set; }
         public int Rate { get; set; }
         public string FeedbackMessage { get; set; }
         public DateTime CreatedOn { get; set; }

@@ -8,7 +8,8 @@ namespace MedicalHub.DAL
 {
     class Patient
     {
-        public Guid Id { get; set; }
-        public Contact ContactId { get; set; }
+        public int Id { get; set; }
+        public Contact Contact { get; set; }
+        public int ContactId { get; set; }
     }
 }
