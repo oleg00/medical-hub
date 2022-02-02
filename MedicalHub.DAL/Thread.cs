@@ -6,7 +6,7 @@
 public class Thread
 {
     
-    public Guid Id { get; set; }
+    public int Id { get; set; }
     
     /// <summary>
     /// Thread created DateTime.
