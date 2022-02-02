@@ -6,5 +6,6 @@
         public int DoctorId { get; set; }
         public int PatientId { get; set; }
         public VisitFeedback VisitFeedback { get; set; }
+        public int VisitFeedBackId { get; set; }
     }
 }
