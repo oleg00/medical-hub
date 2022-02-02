@@ -3,9 +3,9 @@
 public class OnlineVisit
 {
     public int Id { get; set; }
-    public Contact Patient { get; set; }
+    public Patient Patient { get; set; }
     public int PatientId { get; set; }
-    public Contact Doctor { get; set; }
+    public Doctor Doctor { get; set; }
     public int DoctorId { get; set; }
     public DateTime CreatedAt { get; set; }
     public DateTime AppointmentDate { get; set; }
@@ -14,6 +14,8 @@ public class OnlineVisit
     public string? VisitResult { get; set; }
     public string CauseType { get; set; }
     public Conversation Conversation { get; set; }
+    public int ConversationId { get; set; }
     public OnlineVisitAttachment Attachment { get; set; }
+    public int AttachmentId { get; set; }
 }
 
