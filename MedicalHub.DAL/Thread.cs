@@ -22,11 +22,13 @@ public class Thread
     /// Patient who started thread.
     /// </summary>
     public Patient Patient { get; set; }
+    public int PatientId { get; set; }
 
     /// <summary>
     /// Doctor who participates in thread.
     /// </summary>
     public Doctor Doctor { get; set; }
+    public int DoctorId { get; set; }
     
     /// <summary>
     /// Thread name (title).
@@ -52,6 +54,7 @@ public class Thread
     /// Thread closed state info. <see cref="ThreadClosingState"/>
     /// </summary>
     public ThreadClosingState ClosingState { get; set; }
+    public int ClosingStateId { get; set; }
 
     /// <summary>
     /// Thread closing reason (different from <see cref="ThreadClosingState"/>)

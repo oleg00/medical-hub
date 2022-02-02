@@ -12,6 +12,8 @@ public class ThreadMessage
     /// Related thread reference.
     /// </summary>
     public Thread Thread { get; set; }
+
+    public int ThreadId { get; set; }
     
     /// <summary>
     /// Encrypted text.
@@ -22,5 +24,7 @@ public class ThreadMessage
     /// Author contact reference.
     /// </summary>
     public Contact Contact { get; set; }
+
+    public int ContactId { get; set; }
     
 }

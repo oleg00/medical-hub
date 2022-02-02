@@ -10,6 +10,7 @@ public class ThreadMessageAttachment
     public string DataUrl { get; set; }
     
     public ThreadMessage ThreadMessage { get; set; }
+    public int ThreadMessageId { get; set; }
     
 }
 
