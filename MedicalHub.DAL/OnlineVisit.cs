@@ -16,6 +16,5 @@ public class OnlineVisit
     public Conversation Conversation { get; set; }
     public int ConversationId { get; set; }
     public List<OnlineVisitAttachment> Attachments { get; set; }
-    public int AttachmentId { get; set; }
 }
 
