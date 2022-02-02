@@ -7,7 +7,7 @@
         public int PatientId { get; set; }
         public Doctor Doctor { get; set; }
         public int DoctorId { get; set; }
-        public double Rate { get; set; }
+        public int Rate { get; set; }
         public string FeedbackMessage { get; set; }
         public DateTime CreatedTime { get; set; }
     }
