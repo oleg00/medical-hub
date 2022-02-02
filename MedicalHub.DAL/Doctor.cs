@@ -1,4 +1,4 @@
-﻿namespace MedicalHub.DAL
+namespace MedicalHub.DAL
 {
     public class Doctor
     {
