@@ -26,5 +26,7 @@ public class ThreadMessage
     public Contact Contact { get; set; }
 
     public int ContactId { get; set; }
+
+    public List<ThreadMessageAttachment> ThreadMessageAttachments { get; set; }
     
 }

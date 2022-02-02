@@ -60,6 +60,8 @@ public class Thread
     /// Thread closing reason (different from <see cref="ThreadClosingState"/>)
     /// </summary>
     public string ClosingReason { get; set; }
+
+    public List<ThreadMessage> ThreadMessages { get; set; }
     
 }
 
