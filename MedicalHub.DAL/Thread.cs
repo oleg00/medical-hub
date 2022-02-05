@@ -29,6 +29,12 @@ public class Thread
     /// </summary>
     public Doctor Doctor { get; set; }
     public int DoctorId { get; set; }
+
+    /// <summary>
+    /// Related <see cref="OnlineVisit"/> thread.
+    /// </summary>
+    public OnlineVisit OnlineVisit { get; set; }
+    public int OnlineVisitId { get; set; }
     
     /// <summary>
     /// Thread name (title).
@@ -41,11 +47,6 @@ public class Thread
     public bool IsClosed { get; set; }
     
     /// <summary>
-    /// Is Thread approved by Doctor. 
-    /// </summary>
-    public bool IsApprovedByDoctor { get; set; }
-    
-    /// <summary>
     /// Is Doctor contact info shared.
     /// </summary>
     public bool IsContactShared { get; set; }
@@ -55,11 +56,6 @@ public class Thread
     /// </summary>
     public ThreadClosingState ClosingState { get; set; }
     public int ClosingStateId { get; set; }
-
-    /// <summary>
-    /// Thread closing reason (different from <see cref="ThreadClosingState"/>)
-    /// </summary>
-    public string ClosingReason { get; set; }
 
     public List<ThreadMessage> ThreadMessages { get; set; }
     
