@@ -3,6 +3,7 @@
     public class DoctorFeedback
     {
         public int Id { get; set; }
+        public string Text { get; set; }
         public Patient Patient { get; set; }
         public int PatientId { get; set; }
         public Doctor Doctor { get; set; }
