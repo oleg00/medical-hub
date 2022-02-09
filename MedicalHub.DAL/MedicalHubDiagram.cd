@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MedicalHub.DAL.ThreadClosingState">
+    <Position X="30.5" Y="13" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClosingState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MedicalHub.DAL.Contact">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <AssociationLine Name="ContactMessengers" Type="MedicalHub.DAL.ContactMessenger" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="4" />
+        <Point X="19.125" Y="4" />
+        <Point X="19.125" Y="3.045" />
+        <Point X="14.5" Y="3.045" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACQAAAACAAAAAAAAAAQAQABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Contact.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ContactMessengers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.ContactMessenger">
+    <Position X="12.75" Y="1.75" Width="1.75" />
+    <AssociationLine Name="MessengerType" Type="MedicalHub.DAL.MessengerType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="2.438" />
+        <Point X="14.875" Y="2.438" />
+        <Point X="14.875" Y="0.125" />
+        <Point X="16.906" Y="0.125" />
+        <Point X="16.906" Y="0.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAACAAAAAAAAAAAAEEAAAAAAAgAAAA=</HashCode>
+      <FileName>ContactMessenger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Contact" />
+      <Property Name="MessengerType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.Conversation">
+    <Position X="2.75" Y="7.25" Width="1.5" />
+    <AssociationLine Name="Patient" Type="MedicalHub.DAL.Patient" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="8.375" />
+        <Point X="10.452" Y="8.375" />
+        <Point X="10.452" Y="6.562" />
+        <Point X="14.25" Y="6.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Doctor" Type="MedicalHub.DAL.Doctor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.938" Y="8.93" />
+        <Point X="3.938" Y="9.371" />
+        <Point X="8.167" Y="9.371" Type="JumpStart" />
+        <Point X="8.333" Y="9.371" Type="JumpEnd" />
+        <Point X="10.926" Y="9.371" />
+        <Point X="10.926" Y="8.021" />
+        <Point X="15.292" Y="8.021" Type="JumpStart" />
+        <Point X="15.458" Y="8.021" Type="JumpEnd" />
+        <Point X="17.362" Y="8.021" Type="JumpStart" />
+        <Point X="17.528" Y="8.021" Type="JumpEnd" />
+        <Point X="22.186" Y="8.021" Type="JumpStart" />
+        <Point X="22.352" Y="8.021" Type="JumpEnd" />
+        <Point X="23.173" Y="8.021" Type="JumpStart" />
+        <Point X="23.339" Y="8.021" Type="JumpEnd" />
+        <Point X="24.481" Y="8.021" />
+        <Point X="24.481" Y="7.5" />
+        <Point X="25.5" Y="7.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.036" Y="0.11" Height="0.182" Width="0.685" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ConversationMessages" Type="MedicalHub.DAL.ConversationMessage" FixedFromPoint="true">
+      <Path>
+        <Point X="3.438" Y="8.93" />
+        <Point X="3.438" Y="10.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEACAAAAAQAAABAAAAAAAAAAAAACAAQAAAAAAAIACAA=</HashCode>
+      <FileName>Conversation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Patient" />
+      <Property Name="Doctor" />
+      <Property Name="OnlineVisit" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ConversationMessages" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.ConversationAttachment">
+    <Position X="5.75" Y="13" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAAAAAAAAAAAAQAAAAAAAAEAAAAIBAAAAA=</HashCode>
+      <FileName>ConversationAttachment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Message" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.ConversationMessage">
+    <Position X="2.5" Y="10.25" Width="2" />
+    <AssociationLine Name="Conversation" Type="MedicalHub.DAL.Conversation" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="11" />
+        <Point X="1.484" Y="11" />
+        <Point X="1.484" Y="8.09" />
+        <Point X="2.75" Y="8.09" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAKAAAAABAAAAIAAAgAAAAAAAA=</HashCode>
+      <FileName>ConversationMessage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Conversation" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ConversationAttachments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.Doctor">
+    <Position X="25.5" Y="6.75" Width="1.5" />
+    <AssociationLine Name="Contact" Type="MedicalHub.DAL.Contact" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.5" Y="7.125" />
+        <Point X="23.656" Y="7.125" />
+        <Point X="23.656" Y="5.186" />
+        <Point X="23.248" Y="5.186" Type="JumpStart" />
+        <Point X="23.082" Y="5.186" Type="JumpEnd" />
+        <Point X="22.352" Y="5.186" Type="JumpStart" />
+        <Point X="22.186" Y="5.186" Type="JumpEnd" />
+        <Point X="21" Y="5.186" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="DoctorCategories" Type="MedicalHub.DAL.DoctorCategory" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="26.125" Y="6.75" />
+        <Point X="26.125" Y="2.812" />
+        <Point X="25.25" Y="2.812" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="DoctorFeedbacks" Type="MedicalHub.DAL.DoctorFeedback" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27" Y="7.062" />
+        <Point X="32.25" Y="7.062" />
+        <Point X="32.25" Y="4.815" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACABAAAAAAAAAACAAAAAAAAEAAAAEAAAAAAAAAAJA=</HashCode>
+      <FileName>Doctor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Contact" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Educations" />
+      <Property Name="DoctorCategories" />
+      <Property Name="DoctorFeedbacks" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.DoctorCategory">
+    <Position X="23.75" Y="2.25" Width="1.5" />
+    <AssociationLine Name="Doctors" Type="MedicalHub.DAL.Doctor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="24.25" Y="3.546" />
+        <Point X="24.25" Y="5.886" />
+        <Point X="25.688" Y="5.886" />
+        <Point X="25.688" Y="6.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>DoctorCategory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Doctors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.DoctorFeedback">
+    <Position X="31.75" Y="2.75" Width="1.5" />
+    <AssociationLine Name="Patient" Type="MedicalHub.DAL.Patient" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="31.75" Y="4.312" />
+        <Point X="30.815" Y="4.312" />
+        <Point X="30.815" Y="4.761" />
+        <Point X="27.552" Y="4.761" Type="JumpStart" />
+        <Point X="27.386" Y="4.761" Type="JumpEnd" />
+        <Point X="26.208" Y="4.761" Type="JumpStart" />
+        <Point X="26.042" Y="4.761" Type="JumpEnd" />
+        <Point X="24.333" Y="4.761" Type="JumpStart" />
+        <Point X="24.167" Y="4.761" Type="JumpEnd" />
+        <Point X="23.165" Y="4.761" />
+        <Point X="23.165" Y="5.5" />
+        <Point X="22.352" Y="5.5" Type="JumpStart" />
+        <Point X="22.186" Y="5.5" Type="JumpEnd" />
+        <Point X="20.083" Y="5.5" Type="JumpStart" />
+        <Point X="19.917" Y="5.5" Type="JumpEnd" />
+        <Point X="14.688" Y="5.5" />
+        <Point X="14.688" Y="5.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Doctor" Type="MedicalHub.DAL.Doctor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="32.938" Y="4.815" />
+        <Point X="32.938" Y="7.5" />
+        <Point X="27" Y="7.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAQAAAAAAAAAAAAAAAAACAAQAAAAAAAAACAE=</HashCode>
+      <FileName>DoctorFeedback.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Patient" />
+      <Property Name="Doctor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.DoctorSchedule">
+    <Position X="27.25" Y="2.25" Width="1.5" />
+    <AssociationLine Name="Doctor" Type="MedicalHub.DAL.Doctor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27.469" Y="4.315" />
+        <Point X="27.469" Y="6.102" />
+        <Point X="27" Y="6.102" />
+        <Point X="27" Y="6.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAACKAAAAAAAAAAAAAAAAAAAAAACAAQAAAQAAAAAAAA=</HashCode>
+      <FileName>DoctorSchedule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Doctor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.Education">
+    <Position X="32.5" Y="8.5" Width="1.5" />
+    <AssociationLine Name="Doctor" Type="MedicalHub.DAL.Doctor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="32.5" Y="9.625" />
+        <Point X="32.125" Y="9.625" />
+        <Point X="32.125" Y="8.125" />
+        <Point X="27" Y="8.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAQAEAAAAAAAAAAAAACAAQBAAAAAAAAAAA=</HashCode>
+      <FileName>Education.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Doctor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.MessengerType">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAACAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MessengerType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MedicalHub.DAL.OnlineVisit">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <AssociationLine Name="Doctor" Type="MedicalHub.DAL.Doctor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="8.469" />
+        <Point X="8.25" Y="10.078" />
+        <Point X="15.292" Y="10.078" Type="JumpStart" />
+        <Point X="15.458" Y="10.078" Type="JumpEnd" />
+        <Point X="17.362" Y="10.078" Type="JumpStart" />
+        <Point X="17.528" Y="10.078" Type="JumpEnd" />
+        <Point X="18.815" Y="10.078" Type="JumpStart" />
+        <Point X="18.981" Y="10.078" Type="JumpEnd" />
+        <Point X="22.186" Y="10.078" Type="JumpStart" />
+        <Point X="22.352" Y="10.078" Type="JumpEnd" />
+        <Point X="23.173" Y="10.078" Type="JumpStart" />
+        <Point X="23.339" Y="10.078" Type="JumpEnd" />
+        <Point X="25.875" Y="10.078" />
+        <Point X="25.875" Y="8.238" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Conversation" Type="MedicalHub.DAL.Conversation" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="6.859" />
+        <Point X="3.812" Y="6.859" />
+        <Point X="3.812" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgAAEAAiAEAAQAABgCAEYAAAAAAAAACAA=</HashCode>
+      <FileName>OnlineVisit.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Patient" />
+      <Property Name="Doctor" />
+      <Property Name="Conversation" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Attachments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.OnlineVisitAttachment">
+    <Position X="4.5" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAAABAAAAABAAQAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>OnlineVisitAttachment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OnlineVisit" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.Patient">
+    <Position X="14.25" Y="5.75" Width="1.5" />
+    <AssociationLine Name="Contact" Type="MedicalHub.DAL.Contact" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="6.438" />
+        <Point X="20" Y="6.438" />
+        <Point X="20" Y="5.373" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Patient.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Contact" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.ServiceFeedback">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Contact" Type="MedicalHub.DAL.Contact" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.5" Y="0.938" />
+        <Point X="19.125" Y="0.938" />
+        <Point X="19.125" Y="2.748" />
+        <Point X="21.375" Y="2.748" />
+        <Point X="21.375" Y="4.062" />
+        <Point X="21" Y="4.062" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAAAACAAAAAAAAAACAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>ServiceFeedback.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Contact" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.Thread">
+    <Position X="27" Y="12.25" Width="1.5" />
+    <AssociationLine Name="Patient" Type="MedicalHub.DAL.Patient" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27" Y="13.5" />
+        <Point X="23.256" Y="13.5" />
+        <Point X="23.256" Y="6.062" />
+        <Point X="22.352" Y="6.062" Type="JumpStart" />
+        <Point X="22.186" Y="6.062" Type="JumpEnd" />
+        <Point X="20.083" Y="6.062" Type="JumpStart" />
+        <Point X="19.917" Y="6.062" Type="JumpEnd" />
+        <Point X="15.75" Y="6.062" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Doctor" Type="MedicalHub.DAL.Doctor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27.75" Y="12.25" />
+        <Point X="27.75" Y="8.613" />
+        <Point X="26.812" Y="8.613" />
+        <Point X="26.812" Y="8.238" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAYQAAABAAAAADAAQAAAACAMQAAgQAAAAACAA=</HashCode>
+      <FileName>Thread.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Patient" />
+      <Property Name="Doctor" />
+      <Property Name="ClosingState" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ThreadMessages" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.ThreadMessage">
+    <Position X="27" Y="16.75" Width="1.5" />
+    <AssociationLine Name="Thread" Type="MedicalHub.DAL.Thread" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27" Y="17.188" />
+        <Point X="26.625" Y="17.188" />
+        <Point X="26.625" Y="14.419" />
+        <Point X="27" Y="14.419" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Contact" Type="MedicalHub.DAL.Contact" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27" Y="17.875" />
+        <Point X="22.269" Y="17.875" />
+        <Point X="22.269" Y="4.625" />
+        <Point X="21" Y="4.625" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgAAAACAAAAAAAAAAAQAEAAAAACAAAAAA=</HashCode>
+      <FileName>ThreadMessage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Thread" />
+      <Property Name="Contact" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ThreadMessageAttachments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.ThreadMessageAttachment">
+    <Position X="31" Y="15.5" Width="2.5" />
+    <AssociationLine Name="ThreadMessage" Type="MedicalHub.DAL.ThreadMessage" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="32.25" Y="17.18" />
+        <Point X="32.25" Y="17.805" />
+        <Point X="28.5" Y="17.805" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAIAAAAAAAAAAAAQAkAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ThreadMessageAttachment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ThreadMessage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.Visit">
+    <Position X="17" Y="12.25" Width="1.5" />
+    <AssociationLine Name="Doctor" Type="MedicalHub.DAL.Doctor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.953" Y="12.25" />
+        <Point X="17.953" Y="10.928" />
+        <Point X="18.898" Y="10.928" />
+        <Point X="18.898" Y="8.927" />
+        <Point X="22.186" Y="8.927" Type="JumpStart" />
+        <Point X="22.352" Y="8.927" Type="JumpEnd" />
+        <Point X="23.01" Y="8.927" />
+        <Point X="23.01" Y="8.398" />
+        <Point X="23.173" Y="8.398" Type="JumpStart" />
+        <Point X="23.339" Y="8.398" Type="JumpEnd" />
+        <Point X="24.678" Y="8.398" />
+        <Point X="24.678" Y="8" />
+        <Point X="25.5" Y="8" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Patient" Type="MedicalHub.DAL.Patient" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.445" Y="12.25" />
+        <Point X="17.445" Y="6.875" />
+        <Point X="15.75" Y="6.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAAAAAACAASAAAAAAAQACAA=</HashCode>
+      <FileName>Visit.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Doctor" />
+      <Property Name="Patient" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MedicalHub.DAL.VisitFeedback">
+    <Position X="12.5" Y="12.5" Width="1.5" />
+    <AssociationLine Name="Patient" Type="MedicalHub.DAL.Patient" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.25" Y="12.5" />
+        <Point X="13.25" Y="10.824" />
+        <Point X="15.375" Y="10.824" />
+        <Point X="15.375" Y="7.046" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAACAAAAQQAAAAQAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>VisitFeedback.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Patient" />
+      <Property Name="Visit" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
