@@ -8,5 +8,6 @@ namespace MedicalHub.DAL
         public List<Education> Educations { get; set; }
         public List<DoctorCategory> DoctorCategories { get; set; }
         public List<DoctorFeedback> DoctorFeedbacks { get; set; }
+        public List<DoctorVisitPrice> VisitPrices { get; set; }
     }
 }
