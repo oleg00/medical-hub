@@ -4,8 +4,8 @@ using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
-using MedicalHub.WebApp.Areas.Identity;
-using MedicalHub.WebApp.Data;
+using TestIntegratedAuthentication.Areas.Identity;
+using TestIntegratedAuthentication.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
