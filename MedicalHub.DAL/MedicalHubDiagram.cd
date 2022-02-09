@@ -49,8 +49,8 @@
     <Position X="25.5" Y="6.75" Width="1.5" />
     <AssociationLine Name="Contact" Type="MedicalHub.DAL.Contact" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="25.5" Y="7.181" />
-        <Point X="23.656" Y="7.181" />
+        <Point X="25.5" Y="7.125" />
+        <Point X="23.656" Y="7.125" />
         <Point X="23.656" Y="5.186" />
         <Point X="22.352" Y="5.186" Type="JumpStart" />
         <Point X="22.186" Y="5.186" Type="JumpEnd" />
@@ -65,7 +65,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAACABAAgAAAAAAACAAAAAAAAAAAAAEAAAAAAAAAAJA=</HashCode>
+      <HashCode>AAACABAAgAAAAAAACAAAAAAAAAAAAAEAAAAAAAAAABA=</HashCode>
       <FileName>Doctor.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -102,7 +102,7 @@
         <Point X="30.719" Y="5.815" />
         <Point X="30.719" Y="6.946" />
         <Point X="27" Y="6.946" />
-        <Point X="27" Y="6.821" />
+        <Point X="27" Y="6.812" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -268,8 +268,8 @@
         <Point X="23.173" Y="8.398" Type="JumpStart" />
         <Point X="23.339" Y="8.398" Type="JumpEnd" />
         <Point X="24.678" Y="8.398" />
-        <Point X="24.678" Y="8.186" />
-        <Point X="25.5" Y="8.186" />
+        <Point X="24.678" Y="8" />
+        <Point X="25.5" Y="8" />
       </Path>
     </AssociationLine>
     <AssociationLine Name="Patient" Type="MedicalHub.DAL.Patient" FixedFromPoint="true" FixedToPoint="true">
