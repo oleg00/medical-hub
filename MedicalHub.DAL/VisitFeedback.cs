@@ -8,5 +8,7 @@
         public int VisitId { get; set; }
         public Visit Visit { get; set; }
         public int Rate { get; set; }
+
+        public string Text { get; set; }
     }
 }
