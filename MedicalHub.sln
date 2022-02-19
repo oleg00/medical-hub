@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalHub.DAL", "MedicalHub.DAL\MedicalHub.DAL.csproj", "{EAAD4B8D-EF40-40B9-8C31-1AC6032DFEBC}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicalHub.DAL", "MedicalHub.DAL\MedicalHub.DAL.csproj", "{EAAD4B8D-EF40-40B9-8C31-1AC6032DFEBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedicalHub.WebApp", "MedicalHub.WebApp\MedicalHub.WebApp.csproj", "{6622C91D-BF6D-444B-95A9-D6248A2551BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedicalHub.WebApp", "MedicalHub.WebApp\MedicalHub.WebApp.csproj", "{6622C91D-BF6D-444B-95A9-D6248A2551BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +21,11 @@ Global
 		{6622C91D-BF6D-444B-95A9-D6248A2551BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6622C91D-BF6D-444B-95A9-D6248A2551BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6622C91D-BF6D-444B-95A9-D6248A2551BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F6241CA-90AE-41A8-8448-1BE5292921DF}
 	EndGlobalSection
 EndGlobal
