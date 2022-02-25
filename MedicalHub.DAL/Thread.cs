@@ -21,14 +21,14 @@ public class Thread
     /// <summary>
     /// Patient who started thread.
     /// </summary>
-    public Patient Patient { get; set; }
-    public int PatientId { get; set; }
+    public Contact Author { get; set; }
+    public int AuthorId { get; set; }
 
     /// <summary>
     /// Doctor who participates in thread.
     /// </summary>
-    public Doctor? Doctor { get; set; }
-    public int DoctorId { get; set; }
+    public Contact? Participant { get; set; }
+    public int ParticipantId { get; set; }
 
     /// <summary>
     /// Related <see cref="OnlineVisit"/> thread.

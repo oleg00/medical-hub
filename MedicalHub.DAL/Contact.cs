@@ -11,7 +11,5 @@ namespace MedicalHub.DAL
         public UserType UserType { get; set; }
         public List<ContactMessenger> ContactMessengers { get; set; }
         public string ImageUrl { get; set; }
-        public ContactType ContactType { get; set; }
-        public int ContactTypeId { get; set; }
     }
 }
